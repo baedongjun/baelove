@@ -78,17 +78,19 @@ const FullpageJsExample = () => {
 
   const Menu = () => (
     <Navbar bg="light" expand="lg" fixed="top">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="#home" className="mx-2">
+        Fullpage.js + Next.js + Typescript
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Item>
-            <Button onClick={handleAddSection} className="mr-2">
+            <Button onClick={handleAddSection} className="mr-2, mx-1">
               ADD SECTION
             </Button>
           </Nav.Item>
           <Nav.Item>
-            <Button onClick={handleRemoveSection} className="mr-2">
+            <Button onClick={handleRemoveSection} className="mr-2, mx-1">
               REMOVE SECTION
             </Button>
           </Nav.Item>
